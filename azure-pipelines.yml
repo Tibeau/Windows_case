@@ -17,8 +17,10 @@ steps:
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.11'
     jdkArchitectureOption: 'x64'
-    publishJUnitResults: false
+    testRunTitle: 'start test'
+    publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
+    
 
 
 - script: |
