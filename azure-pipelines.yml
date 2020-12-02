@@ -19,7 +19,7 @@ steps:
     jdkArchitectureOption: 'x64'
     testRunTitle: 'start test'
     publishJUnitResults: true
-    testResultsFiles: '/home/vsts/work/1/s/test/fact/it/www/beans/bo:PersoonTest.java'
+    testResultsFiles: '/home/vsts/work/1/s/TEST.xml'
     
 - task: PublishTestResults@2
   inputs:
