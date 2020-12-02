@@ -39,7 +39,7 @@ public class Persoon {
 
     @Override
     public String toString() {
-        return familienaam.toUpperCase()+ " " + voornaam.toLowerCase();
+        return familienaam.toUpperCase()+ "" + voornaam.toLowerCase();
         
     }
     
