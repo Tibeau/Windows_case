@@ -19,7 +19,7 @@ steps:
     jdkArchitectureOption: 'x64'
     testRunTitle: 'start test'
     publishJUnitResults: true
-    testResultsFiles: '**/TEST-*.xml'
+    testResultsFiles: '**\test\fact\it\www\beans\*Test*.java'
     
 
 
