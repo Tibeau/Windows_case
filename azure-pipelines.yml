@@ -18,13 +18,13 @@ steps:
     jdkVersionOption: '1.11'
     jdkArchitectureOption: 'x64'
     testRunTitle: 'start test'
-    publishJUnitResults: false
-    testResultsFiles: '../home/vsts/work/1/s/test/fact/it/www/beans/PersoonTest.java'
+    publishJUnitResults: true
+    testResultsFiles: '/home/vsts/work/1/s/test/fact/it/www/beans/PersoonTest.java'
     
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: '../home/vsts/work/1/s/test/fact/it/www/beans/BezoekerTest.java'
+    testResultsFiles: '/home/vsts/work/1/s/test/fact/it/www/beans/BezoekerTest.java'
 
 - script: |
     echo Starting the build
