@@ -19,12 +19,12 @@ steps:
     jdkArchitectureOption: 'x64'
     testRunTitle: 'start test'
     publishJUnitResults: true
-    testResultsFiles: '\test\fact\it\www\beans\BezoekerTest.java'
+    testResultsFiles: '/home/vsts/work/1/s/\test\fact\it\www\beans\BezoekerTest.java'
     
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: '*\*\test\fact\it\www\beans\BezoekerTest.java'
+    testResultsFiles: '/home/vsts/work/1/s/\test\fact\it\www\beans\*Test.java'
 
 - script: |
     echo Starting the build
