@@ -32,7 +32,6 @@ steps:
     appType: 'webApp'
     appName: 'windows case'
     package: '$(System.DefaultWorkingDirectory)/*.war'
-    deploymentMethod: 'auto'
 
 - script: |
     echo Starting the build
