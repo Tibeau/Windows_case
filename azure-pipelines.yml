@@ -26,6 +26,14 @@ steps:
     testResultsFormat: 'JUnit'
     testResultsFiles: '**/*TEST*.xml'
 
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'windows case'
+    appType: 'webApp'
+    WebAppName: 'windows case'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+
 - script: |
     echo Starting the build
   displayName: 'start build'
