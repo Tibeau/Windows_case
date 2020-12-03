@@ -31,7 +31,7 @@ steps:
     azureSubscription: 'Azure for Students(fb6fb756-5fb1-4919-b457-5754109db533)'
     appType: 'webApp'
     appName: 'windows case'
-    package: '$(System.DefaultWorkingDirectory)/*.zip'
+    package: '$(System.DefaultWorkingDirectory)/*.war'
     deploymentMethod: 'auto'
 
 - script: |
