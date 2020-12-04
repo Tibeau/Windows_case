@@ -30,9 +30,8 @@ steps:
   inputs:
     azureSubscription: 'Azure for Students(fb6fb756-5fb1-4919-b457-5754109db533)'
     appType: 'webApp'
-    appName: 'windows case'
+    appName: 'WindowsCase'
     package: '$(System.DefaultWorkingDirectory)/*.zip'
-    deploymentMethod: 'auto'
 
 - script: |
     echo Starting the build
